@@ -7,6 +7,8 @@ Free to use but not guaranteed.
 ---
 ## Install
 
+Fairly easy... 
+
 ### Clone the repo
 
 As usual, clone the repo somewhere.
@@ -40,15 +42,22 @@ Obviously, you change `[PATH/TO]` to the correct path for you.
 
 ---
 ## pfits GUI
-### Purpose
 
-`pfits`  is a program for plotting a FITS file with very basic options for zooming anywhere in the main image.
+`pfits`  is the simplest GUI for plotting a FITS file with very basic options for zooming anywhere in the main image.
 
 ### How to use is
 
-You can play with sliders to adjust contrast. 
+- Play with sliders vmin and vmax to adjust contrast. The contrast is updated on both main and zoomed image
 
-Right-click to center in the zoom window and use the mouse wheel to zoom in. That's all there is to it! 
+- On the main image
+	- Click anywhere to get a zoom in the zoom windows
+
+- On the zoom image
+	- Left-click to get the intensity profiles on both axes at the clicked point
+	- Right-click to center clicked point in the zoom window 
+	- Mouse wheel to zoom in/out. 
+
+That's all there is to it! 
 
 ### GUI
 
