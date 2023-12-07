@@ -4,6 +4,7 @@ Repository containing a few regularly-used tools.
 
 Free to use but not guaranteed. 
 
+---
 ## Install
 
 ### clone the repo
@@ -16,7 +17,6 @@ git clone https://github.com/GregS1t/astrotools.git
 
 | [numpy](https://numpy.org/) | [scipy](https://www.scipy.org/) | [matplotlib](https://matplotlib.org/) | [pandas](https://pandas.pydata.org/) | [astropy](https://www.astropy.org/) 
 | :-----: | :-----: | :----------: | :------: | :--------: |  
-
 
 ### Paths
 
@@ -37,8 +37,8 @@ export PATH=$PATH:$ASTROSCRIPTS
 
 Obviously, you change `[PATH/TO]` to the correct path for you.
 
-
-## pfits
+---
+## pfits GUI
 
 ### Purpose
 `pfits`  is a program for plotting a FITS file with very basic options for zooming anywhere in the main image.
