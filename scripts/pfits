@@ -19,7 +19,7 @@ fi
 
 
 function usage {
-    echo "usage: pfits.sh [-h] [-f fitsfile]"
+    echo "usage: pfits [-h] [-f fitsfile]"
     echo " "
     echo "Plot the fits file with zoom and contrast"
     echo " "
