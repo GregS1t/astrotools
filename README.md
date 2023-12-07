@@ -6,8 +6,7 @@ Free to use but not guaranteed.
 
 ---
 ## Install
-
-### clone the repo
+### Clone the repo
 
 ```
 git clone https://github.com/GregS1t/astrotools.git
@@ -39,7 +38,6 @@ Obviously, you change `[PATH/TO]` to the correct path for you.
 
 ---
 ## pfits GUI
-
 ### Purpose
 `pfits`  is a program for plotting a FITS file with very basic options for zooming anywhere in the main image.
 
