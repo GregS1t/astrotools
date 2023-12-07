@@ -15,7 +15,7 @@ git clone https://github.com/GregS1t/astrotools.git
 ### Dependancies
 
 | [numpy](https://numpy.org/) | [scipy](https://www.scipy.org/) | [matplotlib](https://matplotlib.org/) | [pandas](https://pandas.pydata.org/) | [astropy](https://www.astropy.org/) 
-| :-----: | :-----: | :----------: | :------: | :---------------: | :------------------------:  
+| :-----: | :-----: | :----------: | :------: | :--------: |  
 
 
 ### Paths
