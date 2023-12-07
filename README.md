@@ -38,6 +38,6 @@ Right-click to center in the zoom window and use the mouse wheel to zoom in. Tha
 
 ### GUI
 
-![image of pfits](../img/pfits_screenshot_1.png)
+<img src="../img/pfits_screenshot_1.png", width=30%>
 
 
