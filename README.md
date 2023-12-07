@@ -6,6 +6,20 @@ Free to use but not guaranteed.
 
 ## Install
 
+### clone the repo
+
+```
+git clone https://github.com/GregS1t/astrotools.git
+```
+
+### Dependancies
+
+| [numpy](https://numpy.org/) | [scipy](https://www.scipy.org/) | [matplotlib](https://matplotlib.org/) | [pandas](https://pandas.pydata.org/) | [astropy](https://www.astropy.org/) 
+| :-----: | :-----: | :----------: | :------: | :---------------: | :------------------------:  
+
+
+### Paths
+
 Don't forget to add `$ASTROCODE` to your `$PATH` so you can use it to call python codes from scripts.
 
 Next, you can add another path to the scripts so you can run them from anywhere. It's up to you.
@@ -28,8 +42,6 @@ Obviously, you change `[PATH/TO]` to the correct path for you.
 
 ### Purpose
 `pfits`  is a program for plotting a FITS file with very basic options for zooming anywhere in the main image.
-
-
 
 ### How to use is
 You can play with sliders to adjust contrast. 
