@@ -372,7 +372,7 @@ if __name__ == '__main__':
 
     # Open the file
     hdul = fits.open(FITS_file)
-    full_img = hdul[0].data[0,0,:,:]
+    full_img = np.squeeze(hdul[0].data)
 
     # Check if any of the argument is -d to print the header
     if '-d' in sys.argv:
