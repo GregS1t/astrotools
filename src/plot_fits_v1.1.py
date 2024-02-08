@@ -412,7 +412,7 @@ if __name__ == '__main__':
     h, w = full_img.shape
 
     fig = plt.figure(figsize=(10, 10))
-    fig.subplots_adjust(hspace=0.1, wspace=0.1)
+    fig.subplots_adjust(hspace=0.15, wspace=0.1)
     fig.tight_layout()
 
     # Main grid spec
