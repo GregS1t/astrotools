@@ -372,7 +372,9 @@ if __name__ == '__main__':
 
     # Open the file
     hdul = fits.open(FITS_file)
-    full_img = hdul[0].data[0,0,:,:]
+    full_img = np.squeeze(hdul[0].data)
+    med = np.nanmedian(full_img)
+    full_img = np.nan_to_num(full_img, nan=med)
 
     # Check if any of the argument is -d to print the header
     if '-d' in sys.argv:
@@ -387,13 +389,17 @@ if __name__ == '__main__':
     
     # WCS  
     wcs = WCS(hdul[0].header)
-    wcs = wcs.dropaxis(2).dropaxis(2)
+    if wcs.naxis==4:
+    	wcs = wcs.dropaxis(2).dropaxis(2)
 
     # Free memory 
     hdul.close()
 
     ImageTitle    = FITS_file.split('/')[-1].split('.')[0]
-    ImageDate     = "DATE: " + hdul[0].header['DATE'] + ' ' + hdul[0].header['TIMESYS']
+    try:
+    	ImageDate     = "DATE: " + hdul[0].header['DATE'] + ' ' + hdul[0].header['TIMESYS']
+    except:
+    	pass
     ImageTelescop = "TELESCOPE: "+ hdul[0].header['TELESCOP']
 
     rcParams['backend'] = 'TkAgg'
@@ -460,7 +466,14 @@ if __name__ == '__main__':
                           pos.width*0.5,pos.height*0.5])
 
     # Print date and telescope below the histogram as floating text
-    ax_main.text(0.01, -0.12, f"{ImageDate}\n{ImageTelescop}", fontsize=6,
+    try:
+        ax_main.text(0.01, -0.12, f"{ImageDate}\n{ImageTelescop}", fontsize=6,
+                     color='black', transform=ax_main.transAxes, 
+                     verticalalignment='center')
+    except:
+    	pass
+    	
+    ax_main.text(0.01, -0.12, f"{ImageTelescop}", fontsize=6,
                  color='black', transform=ax_main.transAxes, 
                  verticalalignment='center')
     
